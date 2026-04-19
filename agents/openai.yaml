@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decision Lattice"
+  short_description: "Route hard decisions through the right mental models"
+  default_prompt: "Use $decision-lattice to analyze this decision and choose the most relevant mental models."
