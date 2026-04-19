@@ -29,6 +29,12 @@ decision-lattice/
 ├── agents/openai.yaml
 └── references/
     ├── model-catalog.md
+    ├── models-decisions.md
+    ├── models-epistemic.md
+    ├── models-growth-risk.md
+    ├── models-social.md
+    ├── models-structure-meta.md
+    ├── models-systems.md
     └── routing-matrix.md
 ```
 

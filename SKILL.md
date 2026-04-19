@@ -12,19 +12,9 @@ Decision Lattice helps Codex decide how to think before deciding what to recomme
 ## Strategy
 
 - Frame the decision before picking models. Write down the objective, available options, main constraints, decision owner, time horizon, reversibility, and downside if the call is wrong.
-- Classify the situation along a few practical axes:
-  - truth-seeking or option selection
-  - simple or coupled system
-  - single-actor or multi-actor
-  - linear or nonlinear growth
-  - low uncertainty or tail-risk-heavy
-  - reversible or path-locking
+- Classify the situation along a few practical axes: truth-seeking or option selection, simple or coupled system, single-actor or multi-actor, linear or nonlinear growth, low uncertainty or tail-risk-heavy, and reversible or path-locking.
 - Select the smallest set of models that gives real coverage. Most tasks need 3 to 7 models. Use more only when the situation is genuinely cross-domain or high stakes.
-- Mix complementary lenses. A good set often includes:
-  - one model for what is true
-  - one model for system response
-  - one model for incentives or actors
-  - one model for time, uncertainty, or ruin
+- Mix complementary lenses. A good set often includes one model for truth, one for system response, one for incentives or actors, and one for time, uncertainty, or ruin.
 - Add one challenger model when the current frame may be misleading. Good challengers include `paradigm shift`, `inversion`, `map is not the territory`, `dialectics`, and `bounded rationality`.
 - Do not force full coverage of all 38 models. The skill exists to choose well, not to perform a ritual.
 - Re-route when new evidence changes the frame. If the problem shifts from "what is true?" to "what should we do?", swap models instead of piling on more.
@@ -38,62 +28,30 @@ Decision Lattice helps Codex decide how to think before deciding what to recomme
 ## Routing Workflow
 
 1. Restate the decision in one sentence.
-2. Capture the minimum decision frame:
-   - objective
-   - options
-   - constraints
-   - time horizon
-   - reversibility
-   - key actors
-   - major unknowns
+2. Capture the minimum decision frame: objective, options, constraints, time horizon, reversibility, key actors, and major unknowns.
 3. Read [references/routing-matrix.md](references/routing-matrix.md) to identify the default bundle for the situation.
-4. Read only the relevant entries from [references/model-catalog.md](references/model-catalog.md) when you need finer selection guidance, pairings, or challenger models.
-5. Apply the chosen models one by one.
-6. Synthesize the result into a recommendation, an evidence plan, and clear revisit triggers.
+4. Read [references/model-catalog.md](references/model-catalog.md) to choose the right reference file or files for this decision.
+5. Open only the matching reference files. Default to one file, use two for cross-domain decisions, and use three only for high-stakes cases with genuine coupling across domains.
+6. Apply the chosen models one by one.
+7. Synthesize the result into a recommendation, an evidence plan, and clear revisit triggers.
 
 ## Output Contract
 
 When you use this skill, structure the result in this order:
 
-- `Decision Frame`
-  - objective
-  - options
-  - assumptions
-  - constraints
-- `Selected Models`
-  - list each chosen model with a one-line reason
-- `What The Models Reveal`
-  - show the important insight from each model
-- `Recommendation`
-  - say what to do now
-  - say why this action dominates the alternatives given the current frame
-- `Evidence To Gather Next`
-  - identify the missing facts most likely to change the call
-- `Failure Modes And Guardrails`
-  - include downside, tail risk, coordination traps, or lock-in risk when relevant
-- `Revisit Triggers`
-  - list the signals that should cause a fresh pass through the lattice
-
-## Selection Heuristics
-
-- If the task is mainly about whether a claim is true, start with `first principles`, `deduction/induction/abduction`, `falsifiability`, `map is not the territory`, and `Occam's razor`.
-- If the task is mainly about changing a complex system, start with `feedback loops`, `emergence`, `leverage points`, `entropy`, and `path dependence`.
-- If the task is mainly about choosing between options, start with `expected value`, `prospect theory`, `inversion`, `opportunity cost`, and `second-order thinking`.
-- If the task is mainly about competition, coordination, or org design, start with `game theory`, `incentives`, `comparative advantage`, `social construction`, and `path dependence`.
-- If the task is mainly about survival under uncertainty, start with `black swan`, `antifragility`, `ergodicity`, `bounded rationality`, and `inversion`.
-- If the task is mainly about growth, scale, or allocation, start with `compounding`, `scaling laws`, `diminishing returns`, `marginal thinking`, and `network effects`.
-- If the task feels trapped inside one frame, add `paradigm shift`, `dialectics`, or `latticework of mental models`.
+- `Decision Frame`: objective, options, assumptions, constraints.
+- `Selected Models`: list each chosen model with a one-line reason.
+- `What The Models Reveal`: show the important insight from each model.
+- `Recommendation`: say what to do now and why this action dominates the alternatives given the current frame.
+- `Evidence To Gather Next`: identify the missing facts most likely to change the call.
+- `Failure Modes And Guardrails`: include downside, tail risk, coordination traps, or lock-in risk when relevant.
+- `Revisit Triggers`: list the signals that should cause a fresh pass through the lattice.
 
 ## Fact Notes
 
 - A mental model is a lens, not a law.
 - Good routing beats exhaustive routing.
-- Some models are best used in pairs:
-  - `expected value` plus `ergodicity` for return vs ruin
-  - `incentives` plus `game theory` for multi-actor behavior
-  - `feedback loops` plus `leverage points` for system intervention
-  - `first principles` plus `falsifiability` for cleaner reasoning
-  - `opportunity cost` plus `marginal thinking` for resource allocation
+- Some models are best used in pairs: `expected value` plus `ergodicity`, `incentives` plus `game theory`, `feedback loops` plus `leverage points`, `first principles` plus `falsifiability`, and `opportunity cost` plus `marginal thinking`.
 - When uncertainty is high, protect survivability before optimization.
 - When a system is social, stated goals are weaker evidence than incentives and repeated behavior.
 
@@ -102,4 +60,6 @@ When you use this skill, structure the result in this order:
 - [references/routing-matrix.md](references/routing-matrix.md)
   - Read this first to map situation types to model bundles.
 - [references/model-catalog.md](references/model-catalog.md)
-  - Read the relevant sections after routing when you need finer model choice, pairings, or challenger models.
+  - Read this next to choose which model reference files to open.
+- `references/models-*.md`
+  - Open only the specific files selected by `model-catalog.md`.
